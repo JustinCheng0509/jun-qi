@@ -9,7 +9,26 @@ export_presets.cfg
 # Imported translations (automatically generated from CSV files)
 *.translation
 
-# Mono-specific ignores
+# Mono-specific ignores (Your original section)
 .mono/
 data_*/
 mono_crash.*.json
+
+# --- Recommended additions for C# / .NET ---
+
+# 1. Standard .NET / C# Build Output
+# C# compiled binaries and temporary folders
+[Bb]in/
+[Oo]bj/
+
+# 2. IDE Files (Visual Studio / VS Code / Rider)
+# Visual Studio Project User Options
+*.suo
+*.user
+*.userprefs
+
+# Visual Studio Code specific files
+.vscode/
+
+# Rider / JetBrains IDE files
+.idea/

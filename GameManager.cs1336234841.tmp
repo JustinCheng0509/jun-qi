@@ -1,0 +1,76 @@
+using Godot;
+
+public partial class GameManager : Node
+{
+    [Export]
+    public Board BoardNode { get; set; }
+    [Export]
+    public RuleChecker RuleCheckerNode { get; set; }
+    [Export]
+    public UIManager UIManagerNode { get; set; }
+
+    public enum GameState
+    {
+        Playing,
+        GameOver,
+        StartMenu,
+        Settings,
+        Setup,
+        PlayerTurn,
+        EnemyTurn,
+        MoveExecution,
+        GamePaused
+    }
+
+    private Player _player;
+
+    public override void _Ready()
+    {
+        // Dependency check
+        if (BoardNode == null || RuleCheckerNode == null || UIManagerNode == null)
+        {
+            GD.PrintErr("GameManager is missing required nodes. Please assign them in the inspector.");
+            return;
+        }
+        // Initialize the GameState
+        SetGameState(GameState.StartMenu);
+    }
+
+    public void SetGameState(GameState newState)
+    {
+        // Handle state transitions and logic here
+        switch (newState)
+        {
+            case GameState.StartMenu:
+                UIManagerNode.ShowStartMenu();
+                break;
+            case GameState.Playing:
+                UIManagerNode.HideStartMenu();
+                StartGame();
+                break;
+            case GameState.GameOver:
+                UIManagerNode.ShowGameOverScreen();
+                break;
+            case GameState.Settings:
+                UIManagerNode.ShowSettingsMenu();
+                break;
+            case GameState.Setup:
+                UIManagerNode.ShowSetupScreen();
+                break;
+            case GameState.PlayerTurn:
+                // Logic for player's turn
+                break;
+            case GameState.EnemyTurn:
+                // Logic for enemy's turn
+                break;
+            case GameState.MoveExecution:
+                // Logic for executing moves
+                break;
+            case GameState.GamePaused:
+                UIManagerNode.ShowPauseMenu();
+                break;
+        }
+    }
+
+
+}
