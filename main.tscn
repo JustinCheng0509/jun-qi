@@ -10,3 +10,23 @@ script = ExtResource("1_ig7tw")
 [node name="UIManager" type="CanvasLayer" parent="."]
 
 [node name="RuleCheckerInstance" type="Node" parent="."]
+
+[node name="AiPlayer" type="Node" parent="."]
+
+[node name="Piece" type="Node2D" parent="."]
+
+[node name="PiecesContainer" type="Node2D" parent="."]
+
+[node name="Highlights" type="Node2D" parent="."]
+
+[node name="MenuScreen" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TurnIndicator" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
