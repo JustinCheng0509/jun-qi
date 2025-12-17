@@ -13,7 +13,7 @@ config_version=5
 config/name="JunQi"
 run/main_scene="uid://dk616cn3bjpu6"
 config/features=PackedStringArray("4.5", "C#", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://Resources/icon.svg"
 
 [display]
 

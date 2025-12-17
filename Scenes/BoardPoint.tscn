@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cucajmr0cdkri"]
 
-[ext_resource type="Texture2D" uid="uid://d3pmsvo2hbx2j" path="res://icon.svg" id="1_v7hkt"]
-[ext_resource type="Script" uid="uid://dnolwl0bjd46k" path="res://BoardPoint.cs" id="2_151xh"]
+[ext_resource type="Texture2D" uid="uid://d3pmsvo2hbx2j" path="res://Resources/icon.svg" id="1_v7hkt"]
+[ext_resource type="Script" uid="uid://dnolwl0bjd46k" path="res://Scripts/BoardPoint.cs" id="2_151xh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_151xh"]
 radius = 34.0

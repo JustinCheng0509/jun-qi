@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dk616cn3bjpu6"]
 
-[ext_resource type="Script" uid="uid://pe48mik1itd7" path="res://GameManager.cs" id="1_ig7tw"]
-[ext_resource type="Script" uid="uid://8j0qa1gg4yta" path="res://BoardManager.cs" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://cucajmr0cdkri" path="res://BoardPoint.tscn" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://pe48mik1itd7" path="res://Scripts/GameManager.cs" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://8j0qa1gg4yta" path="res://Scripts/BoardManager.cs" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cucajmr0cdkri" path="res://Scenes/BoardPoint.tscn" id="3_h2yge"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_ig7tw")
